@@ -1,4 +1,3 @@
-import math
 a=int(input("enter number a: "))
 b=int(input('enter number b: '))
 operation=input('enter operation: +,-, *, /, ** or sqrt: ')
@@ -20,7 +19,7 @@ elif operation=='**':
     print('a^n=', b**n)
 
 elif operation=='sqrt':
-    print('sqrt(a)= ', math.sqrt(a))
-    print('sqrt(b)= ', math.sqrt(b))
+    print('sqrt(a)= ', a ** (1 / 2))
+    print('sqrt(b)= ', b ** (1 / 2))
 else:
     print('You have not typed a valid operator, please run the program again.')
