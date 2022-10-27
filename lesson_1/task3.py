@@ -6,4 +6,4 @@ hour = seconds // 3600
 seconds %= 3600
 min = seconds // 60
 seconds %= 60
-print(day,'days',hour,'hours',min,'minutes',seconds,'seconds')
+print(day,'days',hour,':',min,':',seconds)
