@@ -6,8 +6,5 @@ array.remove(max(array))
 array.remove(min(array))
 
 print('received list: ', array)
-sum=0
-for i in array:
-    sum = sum+i
 
-print("The sum of the array is equal to: ", sum)
+print("The sum of the array is equal to: ", sum(array))
