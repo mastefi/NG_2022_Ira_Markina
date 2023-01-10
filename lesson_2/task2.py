@@ -1,8 +1,5 @@
-array=[int(x) for x in input('enter for array: ').split(',')]
+wordsList = [int(x) for x in input("Enter random numbers with using ,: ").split(',')]
 
-result = []
-for i in array:
-    if i not in result:
-        result.append(i)
+newList = list(set(wordsList))
 
-print("output list without repetitions: " + str(result))
+print(newList)
