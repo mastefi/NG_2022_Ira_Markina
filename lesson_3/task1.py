@@ -4,7 +4,7 @@ def enterNumbers():
 def enterOperation():
     return input("Enter operation(+, -, *, /, power, root): ")
 
-def getInput():
+def enterInput():
     firstNumber=enterNumbers()
     operation=enterOperation()
     secondNumber=enterNumbers()
@@ -45,14 +45,14 @@ def calculate(firstNumber, operation, secondNumber):
 
 def main():
 
-    firstNumber, operation, secondNumber = getInput()
+    firstNumber, operation, secondNumber = enterInput()
     calculate(firstNumber, secondNumber, operation)
 
     next_calculation = input("\nLet's do next calculation? (y/n): ")
     if next_calculation == 'n':
         return
     elif next_calculation == 'y':
-        firstNumber, operation, secondNumber = getInput()
+        firstNumber, operation, secondNumber = enterInput()
         calculate(firstNumber, secondNumber, operation)
     else:
         print('Invalid Input')
